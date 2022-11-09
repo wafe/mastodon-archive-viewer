@@ -49,7 +49,7 @@ for status in statuses:
 outfile = open("processed_archive.html", "w", encoding="utf-8")
 styleSheet = "<style>\
 .status { width: 54ch; position: relative; min-height: 128px; margin:auto auto 4em auto; border: 1px solid #999; border-radius: 16px; padding:8px; background: rgba(0,0,0,0.75);}\
-.status::before{ content: url('avatar.png'); position: absolute; right: 100%; }\
+.status::before{ content: ''; width: 40px; height: 40px; display: block; background-size: 40px 40px; background-image: url('avatar.png'); border-radius: 4px; }\
 .status__summary { width: 100%; background: #333 }\
 .status__summary::after {content: '[Click to Open]';display: block;}\
 .status__date { text-align: right; }\
